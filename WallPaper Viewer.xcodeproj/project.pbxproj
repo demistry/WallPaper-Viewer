@@ -11,6 +11,8 @@
 		349ED9B422825015003C1B05 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349ED9B322825015003C1B05 /* ViewController.swift */; };
 		349ED9B622825016003C1B05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 349ED9B522825016003C1B05 /* Assets.xcassets */; };
 		349ED9B922825016003C1B05 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 349ED9B722825016003C1B05 /* Main.storyboard */; };
+		34F64BE12284E78000C11996 /* SourceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F64BE02284E78000C11996 /* SourceViewController.swift */; };
+		34F64BE42284E79300C11996 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F64BE22284E79300C11996 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		349ED9B822825016003C1B05 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		349ED9BA22825016003C1B05 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		349ED9BB22825016003C1B05 /* WallPaper_Viewer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WallPaper_Viewer.entitlements; sourceTree = "<group>"; };
+		34F64BE02284E78000C11996 /* SourceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceViewController.swift; sourceTree = "<group>"; };
+		34F64BE22284E79300C11996 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +63,8 @@
 				349ED9B722825016003C1B05 /* Main.storyboard */,
 				349ED9BA22825016003C1B05 /* Info.plist */,
 				349ED9BB22825016003C1B05 /* WallPaper_Viewer.entitlements */,
+				34F64BE02284E78000C11996 /* SourceViewController.swift */,
+				34F64BE22284E79300C11996 /* DetailViewController.swift */,
 			);
 			path = "WallPaper Viewer";
 			sourceTree = "<group>";
@@ -135,6 +141,8 @@
 			files = (
 				349ED9B422825015003C1B05 /* ViewController.swift in Sources */,
 				349ED9B222825015003C1B05 /* AppDelegate.swift in Sources */,
+				34F64BE12284E78000C11996 /* SourceViewController.swift in Sources */,
+				34F64BE42284E79300C11996 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
