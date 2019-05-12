@@ -10,9 +10,21 @@ import Cocoa
 
 class DetailViewController: NSViewController {
 
+    @IBOutlet weak var imageViewDisplay: NSImageView!
+    var imageStringSelected : String = ""{
+        didSet{
+            print("here is called")
+            let image = NSImage(imageLiteralResourceName: imageStringSelected)
+            imageViewDisplay.image = image
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
     }
     
+    func changeImage(string : String){
+        let image = NSImage(named: NSImage.Name(stringLiteral: string + ".jpg"))
+        imageViewDisplay.image = image
+    }
 }
