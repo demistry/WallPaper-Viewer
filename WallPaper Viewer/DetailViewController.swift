@@ -13,7 +13,6 @@ class DetailViewController: NSViewController {
     @IBOutlet weak var imageViewDisplay: NSImageView!
     var imageStringSelected : String = ""{
         didSet{
-            print("here is called")
             let image = NSImage(imageLiteralResourceName: imageStringSelected)
             imageViewDisplay.image = image
         }

@@ -45,13 +45,12 @@ extension SourceViewController : NSTableViewDelegate, NSTableViewDataSource{
 //    }
     
     func tableViewSelectionDidChange(_ notification: Notification) {
-        print("Selected row number is \(tableView.selectedRow)")
-        guard tableView.selectedRow != -1 else{
-            return
-        }
         let splitVC = parent as? NSSplitViewController
         let detail = splitVC?.children[1] as! DetailViewController
-        //detailViewController.changeIma
+        guard tableView.selectedRow != -1 else{
+            detail.imageViewDisplay.image = nil
+            return
+        }
         detail.imageStringSelected = images[tableView.selectedRow]
     }
 }
