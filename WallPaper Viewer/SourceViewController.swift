@@ -48,7 +48,7 @@ extension SourceViewController : NSTableViewDelegate, NSTableViewDataSource{
         let splitVC = parent as? NSSplitViewController
         let detail = splitVC?.children[1] as! DetailViewController
         guard tableView.selectedRow != -1 else{
-            detail.imageViewDisplay.image = nil
+            detail.showNoImage()
             return
         }
         detail.imageStringSelected = images[tableView.selectedRow]

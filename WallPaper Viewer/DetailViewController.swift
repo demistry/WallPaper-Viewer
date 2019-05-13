@@ -11,19 +11,26 @@ import Cocoa
 class DetailViewController: NSViewController {
 
     @IBOutlet weak var imageViewDisplay: NSImageView!
+    @IBOutlet weak var customView: NSView!
+    @IBOutlet weak var selectedText: NSTextField!
     var imageStringSelected : String = ""{
         didSet{
+            customView.isHidden = true
+            selectedText.isHidden = true
             let image = NSImage(imageLiteralResourceName: imageStringSelected)
             imageViewDisplay.image = image
         }
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do view setup here.
     }
     
-    func changeImage(string : String){
-        let image = NSImage(named: NSImage.Name(stringLiteral: string + ".jpg"))
-        imageViewDisplay.image = image
+    func showNoImage(){
+        imageViewDisplay.image = nil
+        customView.isHidden = false
+        selectedText.isHidden = false
+        
     }
 }
