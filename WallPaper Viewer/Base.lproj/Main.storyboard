@@ -209,6 +209,32 @@
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
                         <value key="minSize" type="size" width="480" height="270"/>
+                        <toolbar key="toolbar" implicitIdentifier="12AC15D3-F659-4681-AE03-1DC524CAE037" autosavesConfiguration="NO" displayMode="iconOnly" sizeMode="regular" id="pHQ-bA-cgE">
+                            <allowedToolbarItems>
+                                <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="dIl-uG-3pi"/>
+                                <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="MjB-O4-X3E"/>
+                                <toolbarItem implicitItemIdentifier="65D658CF-DEBD-4208-BEEF-80F55921E7B8" label="" paletteLabel="" image="NSShareTemplate" id="vvb-8y-moq">
+                                    <nil key="toolTip"/>
+                                    <size key="minSize" width="47" height="24"/>
+                                    <size key="maxSize" width="47" height="24"/>
+                                    <button key="view" verticalHuggingPriority="750" id="btn-zu-uo6">
+                                        <rect key="frame" x="0.0" y="14" width="47" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                        <buttonCell key="cell" type="roundTextured" bezelStyle="texturedRounded" image="NSShareTemplate" imagePosition="only" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="uCA-pb-kUy">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="shareImage:" target="Oky-zY-oP4" id="S9u-Ct-vQv"/>
+                                        </connections>
+                                    </button>
+                                </toolbarItem>
+                            </allowedToolbarItems>
+                            <defaultToolbarItems>
+                                <toolbarItem reference="MjB-O4-X3E"/>
+                                <toolbarItem reference="vvb-8y-moq"/>
+                            </defaultToolbarItems>
+                        </toolbar>
                         <connections>
                             <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
                         </connections>
@@ -394,4 +420,7 @@
             <point key="canvasLocation" x="730" y="819"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="NSShareTemplate" width="11" height="16"/>
+    </resources>
 </document>
