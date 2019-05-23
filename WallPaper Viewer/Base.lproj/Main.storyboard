@@ -221,10 +221,10 @@
             </objects>
             <point key="canvasLocation" x="75" y="250"/>
         </scene>
-        <!--Split View Controller-->
+        <!--View Controller-->
         <scene sceneID="La7-wP-4R8">
             <objects>
-                <splitViewController id="VXr-sX-wUp" sceneMemberID="viewController">
+                <splitViewController id="VXr-sX-wUp" customClass="ViewController" customModule="WallPaper_Viewer" customModuleProvider="target" sceneMemberID="viewController">
                     <splitViewItems>
                         <splitViewItem holdingPriority="260" id="hYe-Gc-ZwT"/>
                         <splitViewItem id="a39-ZL-kET"/>
@@ -285,9 +285,9 @@
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
                                                                 <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="Dun-68-pun">
-                                                                    <rect key="frame" x="0.0" y="29" width="111" height="22"/>
-                                                                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Image 1" id="Due-fW-tnP">
-                                                                        <font key="font" metaFont="systemBold" size="18"/>
+                                                                    <rect key="frame" x="0.0" y="28" width="111" height="24"/>
+                                                                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" alignment="center" title="Image 1" id="Due-fW-tnP">
+                                                                        <font key="font" metaFont="systemBold" size="20"/>
                                                                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                                                     </textFieldCell>

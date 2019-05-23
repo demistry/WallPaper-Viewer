@@ -12,13 +12,12 @@ class SourceViewController: NSViewController {
 
     @IBOutlet weak var tableView: NSTableView!
     fileprivate let images = ["image1", "image2", "image3", "image4", "image5", "image6", "image7", "image8", "image9", "image10"]
-    fileprivate var detailViewController : NSViewController!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do view setup here.
         tableView.delegate = self
         tableView.dataSource = self
-        detailViewController = DetailViewController()
+        tableView.cell?.type = .imageCellType
     }
     
 }
@@ -32,17 +31,11 @@ extension SourceViewController : NSTableViewDelegate, NSTableViewDataSource{
         let identifier = NSUserInterfaceItemIdentifier("imageCell")
         let cell = tableView.makeView(withIdentifier: identifier, owner: nil) as! NSTableCellView
         cell.textField?.stringValue = images[row]
+        cell.imageView?.image = NSImage(imageLiteralResourceName: images[row])
         return cell
     }
     
 //    func tableView(_ tableView: NSTableView, shouldSelectRow row: Int) -> Bool {
-//        let splitVC = parent as? NSSplitViewController
-//        let detail = splitVC?.children[1] as! DetailViewController
-//        //detailViewController.changeIma
-//        detail.imageStringSelected = images[row]
-//        //detail.changeImage(string: images[row])
-//        return true
-//    }
     
     func tableViewSelectionDidChange(_ notification: Notification) {
         let splitVC = parent as? NSSplitViewController
