@@ -202,7 +202,7 @@
         <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
-                <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
+                <windowController id="B8D-0N-5wS" customClass="WindowController" customModule="WallPaper_Viewer" customModuleProvider="target" sceneMemberID="viewController">
                     <window key="window" title="WallPaper Viewer" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" animationBehavior="default" tabbingMode="disallowed" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
@@ -240,6 +240,7 @@
                         </connections>
                     </window>
                     <connections>
+                        <outlet property="shareButton" destination="btn-zu-uo6" id="eYA-LL-ZOD"/>
                         <segue destination="VXr-sX-wUp" kind="relationship" relationship="window.shadowedContentViewController" id="cIP-qY-hHD"/>
                     </connections>
                 </windowController>
